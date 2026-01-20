@@ -4,7 +4,13 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": ["vue", "datatable", "vue-datatable", "tailwind", "datatable-component"],
+  "keywords": [
+    "vue",
+    "datatable",
+    "vue-datatable",
+    "tailwind",
+    "datatable-component"
+  ],
   "type": "module",
   "main": "./dist/vue-datatable.umd.js",
   "module": "./dist/vue-datatable.es.js",
@@ -57,5 +63,6 @@
     "vite-plugin-dts": "^4.5.0",
     "vite-plugin-vue-devtools": "^7.7.0",
     "vue-tsc": "^2.2.12"
-  }
+  },
+  "version": "1.0.0"
 }
