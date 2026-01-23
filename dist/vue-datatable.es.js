@@ -1,5 +1,5 @@
-import { createElementBlock as o, openBlock as n, createElementVNode as e, defineComponent as j, createVNode as w, unref as v, ref as x, watch as O, computed as m, createCommentVNode as C, normalizeClass as p, Fragment as $, renderList as S, toDisplayString as _, createBlock as R, withDirectives as z, vModelSelect as E, createTextVNode as F } from "vue";
-const b = (r, t) => {
+import { createElementBlock as o, openBlock as n, createElementVNode as e, defineComponent as j, createVNode as b, unref as v, ref as C, watch as O, computed as m, createCommentVNode as k, normalizeClass as p, Fragment as $, renderList as B, toDisplayString as _, createBlock as R, withDirectives as z, vModelSelect as E, createTextVNode as F } from "vue";
+const w = (r, t) => {
   const i = r.__vccOpts || r;
   for (const [f, u] of t)
     i[f] = u;
@@ -32,7 +32,7 @@ function U(r, t) {
     }, null, -1)
   ])]);
 }
-const Y = /* @__PURE__ */ b(I, [["render", U]]), q = {}, G = {
+const Y = /* @__PURE__ */ w(I, [["render", U]]), q = {}, G = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 20 20"
 };
@@ -45,7 +45,7 @@ function H(r, t) {
     }, null, -1)
   ])]);
 }
-const J = /* @__PURE__ */ b(q, [["render", H]]), K = {}, Q = {
+const J = /* @__PURE__ */ w(q, [["render", H]]), K = {}, Q = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 24 24",
   width: "24",
@@ -64,7 +64,7 @@ function W(r, t) {
     }, null, -1)
   ])]);
 }
-const X = /* @__PURE__ */ b(K, [["render", W]]), Z = {}, ee = {
+const X = /* @__PURE__ */ w(K, [["render", W]]), Z = {}, ee = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 24 24",
   width: "24",
@@ -83,7 +83,7 @@ function te(r, t) {
     }, null, -1)
   ])]);
 }
-const re = /* @__PURE__ */ b(Z, [["render", te]]), ne = { class: "w-56 relative" }, oe = /* @__PURE__ */ j({
+const re = /* @__PURE__ */ w(Z, [["render", te]]), ne = { class: "w-56 relative" }, oe = /* @__PURE__ */ j({
   __name: "SearchInput",
   emits: ["search"],
   setup(r, { emit: t }) {
@@ -100,7 +100,7 @@ const re = /* @__PURE__ */ b(Z, [["render", te]]), ne = { class: "w-56 relative"
         sty: "",
         class: "w-full text-sm border-none p-2 pl-9 rounded-md outline-none ring-1 ring-gray-300 focus:ring-black dark:bg-transparent dark:text-white dark:ring-gray-700 dark:focus:ring-white"
       }, null, 32),
-      w(v(Y), { class: "absolute top-1/2 left-2 -translate-y-1/2 text-gray-400" })
+      b(v(Y), { class: "absolute top-1/2 left-2 -translate-y-1/2 text-gray-400" })
     ]));
   }
 }), ae = {}, le = { class: "flex items-center justify-center" };
@@ -109,13 +109,16 @@ function se(r, t) {
     e("div", { class: "w-10 h-10 border-4 border-gray-300 border-t-black dark:border-gray-800 dark:border-t-gray-300 rounded-full animate-spin" }, null, -1)
   ])]);
 }
-const ie = /* @__PURE__ */ b(ae, [["render", se]]), de = { class: "w-full" }, ce = { class: "mb-4 p-2" }, ue = { class: "text-sm p-3 text-left uppercase font-semibold whitespace-nowrap" }, ge = ["onClick"], he = { class: "pt-4" }, pe = {
+const ie = /* @__PURE__ */ w(ae, [["render", se]]), de = { class: "w-full" }, ce = {
+  key: 0,
+  class: "mb-4 p-2"
+}, ue = { class: "text-sm p-3 text-left uppercase font-semibold whitespace-nowrap" }, ge = ["onClick"], he = { class: "pt-4" }, pe = {
   key: 0,
   class: "text-center dark:text-neutral-white py-4"
 }, ve = {
-  key: 0,
+  key: 1,
   class: "mt-4"
-}, fe = { class: "flex justify-center md:justify-end gap-4 flex-wrap" }, we = { class: "relative" }, be = { class: "absolute inset-y-0 right-0 flex items-center px-1 pointer-events-none" }, me = { class: "flex dark:text-white border border-gray-300 dark:border-gray-600 rounded-md shadow-sm" }, _e = { class: "py-2 px-3 text-center inline-block text-xs md:text-sm border-r border-gray-300 dark:border-gray-600" }, ke = { class: "font-semibold" }, ye = ["disabled"], xe = ["disabled"], $e = /* @__PURE__ */ j({
+}, fe = { class: "flex justify-center md:justify-end gap-4 flex-wrap" }, be = { class: "relative" }, we = { class: "absolute inset-y-0 right-0 flex items-center px-1 pointer-events-none" }, me = { class: "flex dark:text-white border border-gray-300 dark:border-gray-600 rounded-md shadow-sm" }, ke = { class: "py-2 px-3 text-center inline-block text-xs md:text-sm border-r border-gray-300 dark:border-gray-600" }, _e = { class: "font-semibold" }, ye = ["disabled"], xe = ["disabled"], $e = /* @__PURE__ */ j({
   __name: "Datatable",
   props: {
     headings: {},
@@ -124,7 +127,8 @@ const ie = /* @__PURE__ */ b(ae, [["render", se]]), de = { class: "w-full" }, ce
     scrollable: { type: Boolean },
     pagination: { type: Boolean },
     paginationMode: {},
-    loading: { type: Boolean }
+    loading: { type: Boolean },
+    searchable: { type: Boolean }
   },
   emits: ["onRowClicked"],
   setup(r, { emit: t }) {
@@ -141,13 +145,13 @@ const ie = /* @__PURE__ */ b(ae, [["render", se]]), de = { class: "w-full" }, ce
           l = "py-4";
       }
       return l;
-    }, d = x(""), c = x(5), s = x(1);
+    }, d = C(""), c = C(5), s = C(1);
     O([c, d], () => {
       s.value = 1;
     });
     const M = (a) => {
       d.value = a;
-    }, g = m(() => d.value !== "" ? i.data.filter((a) => Object.values(a).some((l) => String(l).toLowerCase().includes(d.value.toLowerCase()))) : i.data), k = m(() => Math.ceil(g.value.length / c.value)), y = m(() => {
+    }, g = m(() => d.value !== "" ? i.data.filter((a) => Object.values(a).some((l) => String(l).toLowerCase().includes(d.value.toLowerCase()))) : i.data), y = m(() => Math.ceil(g.value.length / c.value)), x = m(() => {
       if (i.pagination) {
         const a = (s.value - 1) * c.value;
         return g.value.slice(a, a + c.value);
@@ -156,7 +160,7 @@ const ie = /* @__PURE__ */ b(ae, [["render", se]]), de = { class: "w-full" }, ce
     }), D = () => {
       s.value > 1 && s.value--;
     }, L = () => {
-      s.value < k.value && s.value++;
+      s.value < y.value && s.value++;
     }, P = m(() => {
       if (g.value.length === 0)
         return "0 - 0";
@@ -166,43 +170,43 @@ const ie = /* @__PURE__ */ b(ae, [["render", se]]), de = { class: "w-full" }, ce
       f("onRowClicked", a);
     };
     return (a, l) => (n(), o("div", de, [
-      e("div", ce, [
-        w(v(oe), { onSearch: M })
-      ]),
+      r.searchable ? (n(), o("div", ce, [
+        b(v(oe), { onSearch: M })
+      ])) : k("", !0),
       e("div", {
         class: p(["overflow-auto", r.scrollable ? "max-h-112.5" : null])
       }, [
         e("table", {
-          class: p(["w-full dark:text-white", y.value.length === 0 ? "md:table-fixed" : null])
+          class: p(["w-full dark:text-white", x.value.length === 0 ? "md:table-fixed" : null])
         }, [
           e("thead", {
             class: p([r.scrollable ? "sticky top-0 shadow-sm shadow-gray-100 dark:shadow-gray-800 bg-white dark:bg-black" : null])
           }, [
             e("tr", null, [
-              (n(!0), o($, null, S(r.headings, (h) => (n(), o("th", ue, _(h), 1))), 256))
+              (n(!0), o($, null, B(r.headings, (h) => (n(), o("th", ue, _(h), 1))), 256))
             ])
           ], 2),
           e("tbody", null, [
-            (n(!0), o($, null, S(y.value, (h, V) => (n(), o("tr", {
+            (n(!0), o($, null, B(x.value, (h, V) => (n(), o("tr", {
               key: V,
-              onClick: (B) => N(h),
+              onClick: (S) => N(h),
               class: "hover:bg-gray-50 cursor-pointer border-y border-gray-100 dark:border-gray-800 dark:hover:bg-gray-50/5 whitespace-nowrap"
             }, [
-              (n(!0), o($, null, S(Object.values(h), (B, A) => (n(), o("td", {
+              (n(!0), o($, null, B(Object.values(h), (S, A) => (n(), o("td", {
                 key: A,
                 class: p(["text-sm p-3 font-light", u(i.verticalSpacing)])
-              }, _(B), 3))), 128))
+              }, _(S), 3))), 128))
             ], 8, ge))), 128))
           ])
         ], 2)
       ], 2),
       e("div", he, [
-        y.value.length === 0 && !r.loading ? (n(), o("p", pe, "No data")) : C("", !0),
-        r.loading ? (n(), R(v(ie), { key: 1 })) : C("", !0)
+        x.value.length === 0 && !r.loading ? (n(), o("p", pe, "No data")) : k("", !0),
+        r.loading ? (n(), R(v(ie), { key: 1 })) : k("", !0)
       ]),
       r.pagination ? (n(), o("div", ve, [
         e("div", fe, [
-          e("div", we, [
+          e("div", be, [
             z(e("select", {
               "onUpdate:modelValue": l[0] || (l[0] = (h) => c.value = h),
               class: "hover:cursor-pointer appearance-none block px-3 pr-5 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-midtone focus:border-primary-midtone dark:bg-darkmode-background dark:text-neutral-white dark:border-gray-600 dark:focus:ring-neutral-white dark:focus:border-neutral-white text-xs md:text-sm"
@@ -219,13 +223,13 @@ const ie = /* @__PURE__ */ b(ae, [["render", se]]), de = { class: "w-full" }, ce
                 { number: !0 }
               ]
             ]),
-            e("div", be, [
-              w(v(J), { class: "h-4 w-4 text-gray-500" })
+            e("div", we, [
+              b(v(J), { class: "h-4 w-4 text-gray-500" })
             ])
           ]),
           e("div", me, [
-            e("span", _e, [
-              e("span", ke, _(P.value), 1),
+            e("span", ke, [
+              e("span", _e, _(P.value), 1),
               F(" of " + _(g.value.length), 1)
             ]),
             e("span", null, [
@@ -234,19 +238,19 @@ const ie = /* @__PURE__ */ b(ae, [["render", se]]), de = { class: "w-full" }, ce
                 onClick: D,
                 disabled: s.value === 1
               }, [
-                w(v(X))
+                b(v(X))
               ], 10, ye),
               e("button", {
-                class: p(["w-8 h-full rounded-r-md disabled:opacity-50 not-disabled:cursor-pointer", s.value !== k.value ? "hover:bg-gray-100 dark:hover:bg-gray-100/5" : null]),
+                class: p(["w-8 h-full rounded-r-md disabled:opacity-50 not-disabled:cursor-pointer", s.value !== y.value ? "hover:bg-gray-100 dark:hover:bg-gray-100/5" : null]),
                 onClick: L,
-                disabled: s.value === k.value
+                disabled: s.value === y.value
               }, [
-                w(v(re))
+                b(v(re))
               ], 10, xe)
             ])
           ])
         ])
-      ])) : C("", !0)
+      ])) : k("", !0)
     ]));
   }
 });
