@@ -47,6 +47,7 @@ import '@sammyod/vue-datatable/vue-datatable.css';
 | `pagination`     | `boolean`                    | `false`     | Enables pagination for the table.               |
 | `paginationMode` | `'static' \| 'server'`        | `'static'`  | Pagination mode: static or server-side.         |
 | `loading`        | `boolean`                    | `false`     | Displays a loading indicator when `true`.       |
+| `searchable`     | `boolean`                    | `false`     | Enables a search input for filtering table data.|
 
 ### Advanced Example
 

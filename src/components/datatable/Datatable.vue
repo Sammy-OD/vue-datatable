@@ -87,7 +87,7 @@ const rowClicked = (data: {}) => {
 
 <template>
   <div class="w-full">
-    <div class="mb-4 p-2">
+    <div class="mb-4 p-2" v-if="searchable">
       <SearchInput @search="handleSearch" />
     </div>
 

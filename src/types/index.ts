@@ -6,4 +6,5 @@ export interface DatatableProps {
   pagination?: boolean
   paginationMode?: 'static' | 'server'
   loading: boolean
+  searchable?: boolean
 }
