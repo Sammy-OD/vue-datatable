@@ -66,6 +66,7 @@ import '@sammyod/vue-datatable/vue-datatable.css';
 
 <script setup>
 import Datatable from '@sammyod/vue-datatable';
+import '@sammyod/vue-datatable/vue-datatable.css';
 
 const data = [
   { Name: 'John Doe', Age: 30, Email: 'john@example.com' },
@@ -73,6 +74,43 @@ const data = [
 ];
 
 const isLoading = false;
+</script>
+
+<style>
+/* Add any custom styles here */
+</style>
+```
+
+### Advanced Example with Event Handling
+
+```vue
+<template>
+  <Datatable
+    :headings="['Name', 'Age', 'Email']"
+    :data="data"
+    verticalSpacing="wide"
+    :scrollable="true"
+    :pagination="true"
+    paginationMode="server"
+    :loading="isLoading"
+    @onRowClicked="handleRowClick"
+  />
+</template>
+
+<script setup>
+import Datatable from '@sammyod/vue-datatable';
+import '@sammyod/vue-datatable/vue-datatable.css';
+
+const data = [
+  { Name: 'John Doe', Age: 30, Email: 'john@example.com' },
+  { Name: 'Jane Smith', Age: 25, Email: 'jane@example.com' }
+];
+
+const isLoading = false;
+
+const handleRowClick = (row) => {
+  console.log('Row clicked:', row);
+};
 </script>
 
 <style>
